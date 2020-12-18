@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.swal-modal {
+  background-color: rgba(42, 1, 31, 0.8);
+  border: 3px solid rgb(206, 206, 206);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.swal-text {
+font-family: "Inconsolata";
+padding: 17px;
+display: block;
+margin: 22px;
+text-align: center;
+color: white;
+background-color: rgba(70, 18, 57, 0.9);
+border-radius: 5px;
+}
+.swal-title {
+font-family: "Inconsolata";
+padding: 17px;
+display: block;
+margin: 22px;
+text-align: center;
+color: white;
+background-color: rgb(0, 0, 0);
+border-radius: 5px;
+}
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  font-size: 12px;
+  background-color: rgb(49, 49, 49);
+  border: 1px solid white;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.3);
+}
+swal-button:hover{
+  background-color: white;
+}
+.swal-overlay {
+background-color: rgba(42, 1, 31, 0.6);
+}
+.dark-active:active{
+background-color: rgb(47, 46, 46)
+}
+.dropbtn {
+background-color: white;
+color:rgb(27, 27, 27);
+padding: 0.8vh 2vw 0.8vh 2vw;
+border: none;
+border: 1px solid rgb(47, 46, 46);
+border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.dropdown {
+position: relative;
+display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dropdown-content {
+cursor: pointer;
+display: none;
+position: absolute;
+background-color: #f1f1f1;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.dropdown-content .the-content {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+.dropdown-content .the-content:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #2b2c2b; color: white}
+
