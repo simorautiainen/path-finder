@@ -1,4 +1,4 @@
-# Game of Life made with react
+# Path finder made with react
 
 This is a super simple path finder app. It works by first selecting two points on the grid and then drawing barriers between them. Then pressing "Next Step" enough times, app draws you the shortest way between the points.
 
